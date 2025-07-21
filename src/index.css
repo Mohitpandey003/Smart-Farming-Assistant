@@ -1,0 +1,35 @@
+@import "tailwindcss";
+/* In your global styles, typically in index.css or App.css */
+/* Hide Google Translate top toolbar */
+.goog-te-banner-frame {
+    display: none !important;
+  }
+  
+  /* Hide the "Original Text" tooltip */
+  .goog-te-gadget-icon {
+    display: none !important;
+  }
+  
+  .goog-tooltip,
+  .goog-tooltip:hover {
+    display: none !important;
+  }
+  
+  /* Hide Google Translate iframe */
+  body > .skiptranslate {
+    display: none !important;
+  }
+  
+  /* Prevent Google Translate from modifying page layout */
+  html {
+    top: 0 !important;
+  }
+  
+  body > .skiptranslate,
+.goog-te-banner-frame {
+  display: none !important;
+}
+
+body {
+  top: 0px !important;
+}
