@@ -49,7 +49,7 @@ const CropRecommendation = () => {
 
     try {
       const response = await fetch(
-        `http://localhost:3000/api/crop-recommendation`,
+        `https://smart-farming-assistant-29x8.onrender.com/api/crop-recommendation`,
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },

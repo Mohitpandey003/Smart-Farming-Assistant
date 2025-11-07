@@ -1,7 +1,7 @@
 // src/pages/FertilizerRecommendation.jsx
 import { useState } from "react";
 
-const BASE_URL = "http://localhost:3000";
+const BASE_URL = "https://smart-farming-assistant-29x8.onrender.com";
 
 const FertilizerRecommendation = () => {
   const [temperature, setTemperature] = useState("");
