@@ -2,6 +2,7 @@ from flask import Flask, request, jsonify
 import pickle
 import numpy as np
 from flask_cors import CORS 
+import os
 
 # Load the trained crop model
 with open("crop_model.pkl", "rb") as model_file:
@@ -36,4 +37,5 @@ def predict_crop():
         return jsonify({"error": str(e)})
 
 if __name__ == '__main__':
-    app.run(debug=True, port=8000)
+    port = int(os.environ.get("PORT", 8000))
+    app.run(host='0.0.0.0', port=port)
